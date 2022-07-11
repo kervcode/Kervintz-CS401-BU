@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* LINE HEIGHT CLASS FOR THE TEXTS */
+.line-height{
+    line-height: 1.5;
+}
+
+/* ALL ORANGE LINKS */
+.link-color, .link-color a, .line-height { 
+    color: orange;
+}
+
+html {
+    background-image: url("../images/bats.gif");
+    background-repeat: repeat;
+    -webkit-background-image: url("../images/bats.gif");
+    -webkit-background-repeat: repeat;
+    -moz-background-image: url("../images/bats.gif");
+    -moz-background-repeat: repeat;
+    -ms-background-image: url("../images/bats.gif");
+    -ms-background-repeat: repeat;
+}
+
+body {
+    width: 800px;
+    background: white;
+    border: 1px solid black;
+    margin: 0 auto;
+    font-family: Sans-Serif;
+    font-size: 16px;
+    box-shadow: 1px 10px black; /*adjust after*/
+}
+
+header {
+    padding: 15px;
+    border-bottom: 2px solid black;
+    background-image: linear-gradient(45deg, white, orange, black);
+    margin-bottom: 30px;
+}
+
+#logo {
+    float: left;
+    padding-right: 30px;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.3rem;
+}
+
+h1::first-letter{
+    font-size: 250%;
+}
+
+h2 {
+    font-size: 2.5rem;    
+    line-height: 1.5;
+}
+
+#sidebar {
+    float: left;
+    width: 160px;
+    padding-left: 25px;
+    /* border: 2px saddlebrown solid; */
+}
+
+#main-content {
+    float: right;
+    width: 638px;   
+}
+
+
+li a, li a:visited {
+    font-weight: 600;
+}
+
+li a:focus, 
+li a:hover {
+    color: green;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+footer {
+    clear: both;
+    bottom: 0px;
+    font-size: .9rem;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #000;
+    background-image: linear-gradient(-45deg, white, orange, black);
+}
