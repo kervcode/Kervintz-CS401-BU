@@ -17,7 +17,7 @@ a #cat-caption {
 }
 
 html {
-    background-image: url("../images/bats.gif");
+    background-image: url("../../images/bats.gif");
     background-repeat: repeat;
     -webkit-background-image: url("../images/bats.gif");
     -webkit-background-repeat: repeat;
@@ -75,8 +75,7 @@ h2 {
 
 #main-content {
     float: right;
-    width: 638px;
-    padding-right: 40px; 
+    width: 638px;   
 }
 
 
