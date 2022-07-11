@@ -5,12 +5,14 @@
 }
 
 /* LINE HEIGHT CLASS FOR THE TEXTS */
-.line-height{
+.line-height {
     line-height: 1.5;
 }
 
 /* ALL ORANGE LINKS */
-.link-color, .link-color a, .line-height { 
+.link-color, 
+.link-color a,  
+a #cat-caption { 
     color: orange;
 }
 
@@ -68,7 +70,7 @@ h2 {
     float: left;
     width: 160px;
     padding-left: 25px;
-    /* border: 2px saddlebrown solid; */
+
 }
 
 #main-content {
@@ -84,6 +86,10 @@ li a, li a:visited {
 li a:focus, 
 li a:hover {
     color: green;
+}
+
+#cat-caption{
+    font-weight: bold;
 }
 
 p {
