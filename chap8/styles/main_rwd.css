@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* LINE HEIGHT CLASS FOR THE TEXTS */
+.line-height {
+  line-height: 1.5;
+}
+
+/* ALL ORANGE LINKS */
+.link-color,
+.link-color a,
+a #cat-caption {
+  color: orange;
+}
+
+html {
+  background-image: url("../../images/bats.gif");
+  background-repeat: repeat;
+  -webkit-background-image: url("../images/bats.gif");
+  -webkit-background-repeat: repeat;
+  -moz-background-image: url("../images/bats.gif");
+  -moz-background-repeat: repeat;
+  -ms-background-image: url("../images/bats.gif");
+  -ms-background-repeat: repeat;
+}
+
+body {
+  width: 95%;
+  max-width: 960px;
+  background: white;
+  border: 0.160em solid black;
+  margin: 0 auto;
+  font-family: Sans-Serif;
+  font-size: 100%;
+  box-shadow: 0.160em 0.05em black;
+  /*adjust after*/
+}
+
+header {
+  padding: .75em;
+  border-bottom: 2px solid black;
+  background-image: linear-gradient(45deg, white, orange, black);
+  /* margin-bottom: 30px; */
+}
+
+#logo {
+  min-width: 40px; /*image cannot be less than 40px*/
+  float: left;
+  padding-right: 2em;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h1::first-letter {
+  font-size: 250%;
+}
+
+h2 {
+  font-size: 2.5em;
+  line-height: 1.5;
+}
+
+/* chapter 7 */
+/* Menu horizontal */
+#nav-menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+#nav-menu ul a {
+  color: #fff;
+  padding: 0 1.2em;
+  text-decoration: none;
+}
+
+#nav-menu ul li {
+  float: left;
+  padding: .7em 0;
+  color: #fff;
+}
+
+#nav-menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+
+#nav-menu ul ul li {
+  float: none;
+}
+
+#nav-menu ul li:hover>ul {
+  display: block;
+  width: 18%;
+}
+
+#nav-menu ul ul li:hover {
+  background-color: gray;
+}
+
+#nav-menu>ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* SIDEBAR RULES */
+
+#sidebar {
+  margin-top: 2.5em;
+  float: left;
+  width: 20%;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  margin-left: 2em;
+  margin-bottom: 1.5em;
+}
+
+#home {
+  color: orange !important;
+}
+
+#sidebar ul li {
+  width: 81.25%;
+  margin-bottom: .5em;
+  border: 2px solid black;
+  padding: .5em 0 .5em 0.5em;
+  background-color: orange;
+}
+
+#sidebar ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+
+#main-content {
+  float: right;
+  width: 76.25%;
+  padding-right: 2.5em;
+  text-align: justify;
+  margin-top: 1.5em;
+}
+
+
+li a,
+li a:visited {
+  font-weight: 600;
+}
+
+li a:focus,
+li a:hover {
+  color: green;
+}
+
+#cat-caption {
+  font-weight: bold;
+}
+
+p {
+  padding-bottom: .9em;
+}
+
+p:last-of-type {
+  margin-bottom: .9em;
+}
+
+
+footer {
+  clear: both;
+  bottom: 0px;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 1.1em;
+  border-top: 1px solid #000;
+  background-image: linear-gradient(-45deg, white, orange, black);
+}
+
+/* Media Query */
+/* Specifications for a media query for a tablet in portrait orientation */
+
+@media only screen and (max-width: 800px) {
+  
+  html {
+    background-image: none;
+  }
+  
+  
+  body {
+    background-image: url("");
+    font-size: 90%;
+    box-shadow: none;
+  }
+}
+
+/* Specifications for a media query for a mobile phone in landscape orientation */
+@media only screen and (max-width: 767px) {
+  #nav-menu {
+    display: none;
+  }
+}
