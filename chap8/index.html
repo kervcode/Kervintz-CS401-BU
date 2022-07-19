@@ -7,9 +7,18 @@
       content="width=device-width, initial-scale=1">
 	<title>Hallowen Store</title>
 	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-	<!-- <link rel="stylesheet" href="../chap6/styles/normalize.css"> -->
+	<link rel="stylesheet" href="../chap6/styles/normalize.css">
 	<link rel="stylesheet" href="../chap8/styles/main_rwd.css">
-	<link rel="stylesheet" href="slicknav.css">
+		<link rel="stylesheet" href="../chap8/styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+
+
 </head>
 
 <body>
@@ -18,12 +27,13 @@
 		<h2>The Hallowen Store</h2>
 		<h3>For the little Goblin in all of us!</h3>
 	</header>
-	<nav id="mobile-menu">
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
 		<ul>
-			<li class="nav-menu-class">
+			<li class="nav_menu-class">
 				<a href="" id="home">Home</a>
 			</li>
-			<li class="nav-menu-class">
+			<li class="nav_menu-class">
 				<a href="">Product List</a>
 				<ul>
 					<li><a href="">Candies</a></li>
@@ -32,10 +42,10 @@
 					<li><a href="">Pumpkin</a></li>
 				</ul>
 			</li>
-			<li class="nav-menu-class">
+			<li class="nav_menu-class">
 				<a href="">Personal</a>
 			</li>
-			<li class="nav-menu-class">
+			<li class="nav_menu-class">
 				<a href="">Decorating Ideas</a>
 				<ul>
 					<li><a href="">Outdoor</a></li>
@@ -44,38 +54,7 @@
 					<li><a href="">Treats</a></li>
 				</ul>
 			</li>
-			<li class="nav-menu-class">
-				<a href="">Join Email</a>
-			</li>
-		</ul>
-	</nav>
-	<nav id="nav-menu">
-		<ul>
-			<li class="nav-menu-class">
-				<a href="" id="home">Home</a>
-			</li>
-			<li class="nav-menu-class">
-				<a href="">Product List</a>
-				<ul>
-					<li><a href="">Candies</a></li>
-					<li><a href="">T-shirt</a></li>
-					<li><a href="">Robe</a></li>
-					<li><a href="">Pumpkin</a></li>
-				</ul>
-			</li>
-			<li class="nav-menu-class">
-				<a href="">Personal</a>
-			</li>
-			<li class="nav-menu-class">
-				<a href="">Decorating Ideas</a>
-				<ul>
-					<li><a href="">Outdoor</a></li>
-					<li><a href="">Indoor</a></li>
-					<li><a href="">Table</a></li>
-					<li><a href="">Treats</a></li>
-				</ul>
-			</li>
-			<li class="nav-menu-class">
+			<li class="nav_menu-class">
 				<a href="">Join Email</a>
 			</li>
 		</ul>
@@ -120,5 +99,7 @@
 	<footer class="gradient">
 		&copy; 2016 Ben Murach
 	</footer>
+	
+
 </body>
 </html>

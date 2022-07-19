@@ -73,7 +73,7 @@ h2 {
 
 /* chapter 7 */
 /* Menu horizontal */
-#nav-menu ul {
+#nav_menu ul {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
@@ -88,38 +88,38 @@ h2 {
   display: none;
 }
 
-#nav-menu ul a {
+#nav_menu ul a {
   color: #fff;
   padding: 0 1.2em;
   text-decoration: none;
 }
 
-#nav-menu ul li {
+#nav_menu ul li {
   float: left;
   padding: .7em 0;
   color: #fff;
 }
 
-#nav-menu ul ul {
+#nav_menu ul ul {
   display: none;
   position: absolute;
   top: 100%;
 }
 
-#nav-menu ul ul li {
+#nav_menu ul ul li {
   float: none;
 }
 
-#nav-menu ul li:hover>ul {
+#nav_menu ul li:hover>ul {
   display: block;
   width: 18%;
 }
 
-#nav-menu ul ul li:hover {
+#nav_menu ul ul li:hover {
   background-color: gray;
 }
 
-#nav-menu>ul::after {
+#nav_menu>ul::after {
   content: "";
   display: block;
   clear: both;
@@ -166,6 +166,12 @@ h2 {
   margin-top: 1.5em;
 }
 
+#main-content img {
+  margin: 1em;
+}
+
+
+
 
 li a,
 li a:visited {
@@ -178,7 +184,8 @@ li a:hover {
 }
 
 #cat-caption {
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-size: 1.5em;
 }
 
 p {
@@ -200,6 +207,11 @@ footer {
   background-image: linear-gradient(-45deg, white, orange, black);
 }
 
+
+#mobile_menu {
+  display: none;
+}
+
 /* Media Query */
 /* Specifications for a media query for a tablet in portrait orientation */
 
@@ -219,7 +231,85 @@ footer {
 
 /* Specifications for a media query for a mobile phone in landscape orientation */
 @media only screen and (max-width: 767px) {
-  #nav-menu {
-    display: none;
+  body {
+    display: flex;
+    flex-direction: column;
   }
+  
+  header {
+    order: 1;
+  }
+  
+  nav {
+    order: 2;
+  }
+  #nav_menu {
+    display: none;
+    
+  }
+  
+  #main-content {
+    width: 100%;
+    order: 3;
+    padding: 0 2em;
+    margin: 0;
+  }
+  
+  #sidebar {
+    order: 4;
+    width: 40vw;
+    float: none;
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  #sidebar ul {
+    width: 100%;
+  }
+  
+  footer {
+    order: 5;
+    margin-top: 1em;
+  }
+  
+  
+  #mobile_menu {
+    display: block;
+  }
+
+  .slicknav_menu {
+    background-color: #4C4C4C !important;
+  }
+}
+
+/* media query that will be applied to screens with a maximum width of 479 pixels. */
+
+@media only screen and (max-width: 479px) {
+  body{
+    font-size: 89%;
+  }
+  
+     h1 {
+      font-size: 1.5em;
+      padding: 0;
+      margin-bottom: 0;
+    }
+    
+    #logo {
+      width: 80px;
+      margin-top: .7em; 
+    }
+    
+    h2 {
+      font-size: 2em;
+    }
+  
+     h3 {
+      font-size: 1.25em;
+      margin-bottom: .4em;
+    }
+  
+  
 }
