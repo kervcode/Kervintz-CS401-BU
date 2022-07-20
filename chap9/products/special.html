@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport"
+      content="width=device-width, initial-scale=1">
+	<title>Hallowen Store</title>
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+	<link rel="stylesheet" href="../chap6/styles/normalize.css">
+	<link rel="stylesheet" href="../styles/c9_category.css">
+		<link rel="stylesheet" href="../../chap8/styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+
+
+</head>
+
+<body>
+	<header class="gradient">
+		<img src="../../images/pumpkin.gif" alt="pumpkin" id="logo">
+		<h2>The Hallowen Store</h2>
+		<h3>For the little Goblin in all of us!</h3>
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li class="nav_menu-class">
+				<a href="../index.html" id="home">Home</a>
+			</li>
+			<li class="nav_menu-class">
+				<a href="special.html">Product List</a>
+			</li>
+			<li class="nav_menu-class">
+				<a href="">Personal</a>
+			</li>
+			<li class="nav_menu-class">
+				<a href="">Decorating Ideas</a>
+				<ul>
+					<li><a href="">Outdoor</a></li>
+					<li><a href="">Indoor</a></li>
+					<li><a href="">Table</a></li>
+					<li><a href="">Treats</a></li>
+				</ul>
+			</li>
+			<li class="nav_menu-class">
+				<a href="">Join Email</a>
+			</li>
+		</ul>
+	</nav>
+
+	<nav id="sidebar">
+		<ul class="line-height link-color">
+			<li><a href="" alt="">Props</a></li>
+			<li><a href="" alt="">Costumes</a></li>
+			<li><a href="" alt="">Special FX</a></li>
+			<li><a href="" alt="">Masks</a></li>
+		</ul>
+	</nav>
+
+	<main id="main-content">
+		<h2>Special effects</h2>
+		
+		<ul>
+			<li>
+				<h3><a href="">Black light</a></h3>
+				<p class="paragraph">Create that creepy glow-in-the-dark effect with this powerful black light.</p>
+				<p>
+					<span class="price">Price:</span> 19.99
+				</p>
+			</li>
+			<li>
+				<h3><a href="">Fog machine</a></h3>
+				<p class="paragraph">The perfect fog machine for the home haunter.</p>
+				<p>
+					<span class="price">Price: </span> 34.99
+				</p>
+			</li>
+			<li>
+				<h3><a href="">Fog juice (1 qt.)</a></h3>
+				<p class="paragraph">Fill up your fog machine to create an eerie affect.</p>
+				<p>
+					<span class="price">Price: </span> 9.99
+				</p>
+			</li>
+			<li>
+				<h3><a href="">Skull fogger</a></h3>
+				<p class="paragraph">This fogger puts out a whopping 2,800 cubic feet of fog per minute. Comes with a 10-foot remote control.</p>
+				<p>
+					<span class="price">Price: </span> 39.99
+				</p>
+			</li>
+			<li>
+				<h3><a href="">Black mini strobe light</a></h3>
+				<p class="paragraph">Perfect for creating that spot flash effect. Includes mounting bracket.</p>
+				<p>
+					<span class="price">Price: </span> 13.99
+				</p>
+			</li>
+			<li>
+				<h3><a href="">Thunder and lightening mach</a>ine</h3>
+				<p class="paragraph">Flash! Boom! Create your own realistic thunder and lightning effects!</p>
+				<p>
+					<span class="price">Price: </span> 99.99
+				</p>
+			</li>
+			
+		</ul> 
+
+	</main>
+
+	<footer class="gradient">
+		&copy; 2016 Ben Murach
+	</footer>
+	
+
+</body>
+</html>
