@@ -37,6 +37,8 @@ body {
   font-size: 100%;
   box-shadow: 0.160em 0.05em black;
   /*adjust after*/
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -129,7 +131,7 @@ h2 {
 
 #sidebar {
   margin-top: 2.5em;
-  float: left;
+  /* float: left; */
   width: 20%;
 }
 
@@ -160,7 +162,9 @@ h2 {
 
 
 #main-content {
-  float: right;
+  display: flex;
+  flex-direction: column;
+  /* float: right; */
   width: 76.25%;
   padding-right: 2.5em;
   text-align: justify;
@@ -213,15 +217,13 @@ footer {
   display: none;
 }
 
-/* Media Query */
-/* Specifications for a media query for a tablet in portrait orientation */
-
+/* Media Query 
+ Specifications for a media query for a tablet in portrait orientation */
 @media only screen and (max-width: 800px) {
   
   html {
     background-image: none;
   }
-  
   
   body {
     background-image: url("");
@@ -230,7 +232,8 @@ footer {
   }
 }
 
-/* Specifications for a media query for a mobile phone in landscape orientation */
+/* Specifications for a media query for a mobile phone in landscape 
+   orientation */
 @media only screen and (max-width: 767px) {
   body {
     display: flex;
