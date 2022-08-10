@@ -130,12 +130,7 @@ h2 {
 /* the styles for the main content */
 #main-content {
   display: flex;
-  transition: 3s;
-}
-
-#cat-content img:hover {
-  transform: scaleX(125px);
-    -webkit-transform: scaleX(125px);
+  
 }
 
 #sidebar, #cat {

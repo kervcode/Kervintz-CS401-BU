@@ -32,7 +32,7 @@ body {
     background: white;
     border: 1px solid black;
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: Sans-Serif;
     font-size: 16px;
     box-shadow: 1px 10px black; /*adjust after*/
 }
