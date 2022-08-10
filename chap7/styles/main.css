@@ -131,9 +131,13 @@ h2 {
     margin-bottom: 1.5em;
 }
 
-#home {
-    color: orange !important;
+li:active {
+    color: orange;
 }
+
+/* #home {
+    color: orange !important;
+} */
 
 #sidebar ul li {
     width: 130px;
@@ -156,6 +160,10 @@ h2 {
     padding-right: 30px;
     text-align: justify;
     margin-top: 20px;
+}
+
+.nav-menu-class:active {
+    color: orange;
 }
 
 
