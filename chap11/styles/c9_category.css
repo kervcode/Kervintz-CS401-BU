@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+p, span {
+  padding: 0;
+  margin: 0;
+}
+
 /* LINE HEIGHT CLASS FOR THE TEXTS */
 .line-height {
   line-height: 1.5;
@@ -37,9 +42,12 @@ body {
   font-size: 100%;
   box-shadow: 0.160em 0.05em black;
   /*adjust after*/
+  display: flex;
+  flex-direction: column;
 }
 
 header {
+  flex-basis: 100%;
   padding: .75em;
   border-bottom: 2px solid black;
   background-image: linear-gradient(45deg, white, orange, black);
@@ -75,10 +83,11 @@ h2 {
 /* Menu horizontal */
 #nav_menu ul {
   display: flex;
+  flex-basis: 100%;
   justify-content: space-evenly;
   list-style: none;
-  position: relative;
-  width: 100%;
+  /* position: relative; */
+  /* width: 100%; */
   background-color: #000;
   color: #fff;
   text-align: center;
@@ -125,22 +134,29 @@ h2 {
   clear: both;
 }
 
+#products {
+  display: flex;
+}
+
 /* SIDEBAR RULES */
 
 #sidebar {
   margin-top: 2.5em;
-  float: left;
-  width: 20%;
+  /* float: left; */
+  /* width: 20%; */
+  flex-basis: 25%;
 }
 
 #sidebar ul {
+  flex-basis: 25%;
   list-style-type: none;
   margin-left: 2em;
   margin-bottom: 1.5em;
 }
 
-#home {
-  color: orange !important;
+.nav_menu-class a:current,
+.nav_menu-class a:active {
+  color: orange;
 }
 
 #sidebar ul li {
@@ -159,15 +175,38 @@ h2 {
 
 
 #main-content {
-  float: right;
-  width: 76.25%;
+  flex-direction: column;
+  flex-basis: 75%;
   padding-right: 2.5em;
   text-align: justify;
   margin-top: 1.5em;
+  line-height: 1.2;
+}
+
+#main-content h2 {
+  font-size: 1.30em;
+}
+
+#main-content h3 {
+  font-size: 1em;
 }
 
 #main-content img {
   margin: 1em;
+  list-style-type: none;
+}
+
+#main-content li {
+  list-style-type: none;
+}
+
+#main-content a {
+  color: orange;
+  text-decoration: none;
+}
+
+.price {
+  font-weight: bold;
 }
 
 
@@ -189,7 +228,7 @@ li a:hover {
 }
 
 p {
-  padding-bottom: .9em;
+  /* padding-bottom: .9em; */
 }
 
 p:last-of-type {
@@ -212,9 +251,8 @@ footer {
   display: none;
 }
 
-/* Media Query */
-/* Specifications for a media query for a tablet in portrait orientation */
-
+/* Media Query 
+ Specifications for a media query for a tablet in portrait orientation */
 @media only screen and (max-width: 800px) {
   
   html {
@@ -228,36 +266,47 @@ footer {
   }
 }
 
-/* Specifications for a media query for a mobile phone in landscape orientation */
-@media only screen and (max-width: 767px) {
+/* Specifications for a media query for a mobile phone in landscape 
+   orientation */
+@media only screen and (max-width: 667px) {
   body {
     display: flex;
     flex-direction: column;
   }
   
   header {
-    order: 1;
+    /* order: 1; */
   }
   
   nav {
-    order: 2;
+    /* order: 2; */
   }
   #nav_menu {
     display: none;
+    
   }
   
-  #main-content {
-    width: 100%;
-    order: 3;
+  #products{
+    /* width: 100%; */
+    /* flex-basis: 100%; */
+    /* flex-grow: 1; */
+    /* order: 3; */
+    display: flex;
+    flex-direction: column;
     padding: 0 2em;
     margin: 0;
   }
   
+  #main-content {
+    order: 1;
+    flex-basis: 100%;
+  }
+  
   #sidebar {
-    order: 4;
+    order: 2;
     width: 40vw;
-    float: none;
-    /* display: flex; */
+    flex-basis: 100%;
+    flex-grow: 1;
     justify-content: center;
     text-align: center;
     margin: 0 auto;
@@ -268,9 +317,10 @@ footer {
   }
   
   footer {
-    order: 5;
+    /* order: 8; */
     margin-top: 1em;
   }
+  
   
   #mobile_menu {
     display: block;
@@ -307,4 +357,6 @@ footer {
       font-size: 1.25em;
       margin-bottom: .4em;
     }
+  
+  
 }

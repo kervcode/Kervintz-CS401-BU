@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport"
+      content="width=device-width, initial-scale=1">
+	<title>Hallowen Store</title>
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+	<link rel="stylesheet" href="../chap6/styles/normalize.css">
+	<link rel="stylesheet" href="../chap9/styles/main_rwd.css">
+		<link rel="stylesheet" href="../chap9/styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+
+
+</head>
+
+<body>
+	<header class="gradient">
+		<img src="../images/pumpkin.gif" alt="pumpkin" id="logo">
+		<h2>The Hallowen Store</h2>
+		<h3>For the little Goblin in all of us!</h3>
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li class="nav_menu-class">
+				<a href="../chap9/index.html" id="home">Home</a>
+			</li>
+			<li class="nav_menu-class">
+				<a href="./products/special.html">Product List</a>
+			</li>
+			<li class="nav_menu-class">
+				<a href="">Personal</a>
+			</li>
+			<li class="nav_menu-class">
+				<a href="">Decorating Ideas</a>
+				<ul>
+					<li><a href="">Outdoor</a></li>
+					<li><a href="">Indoor</a></li>
+					<li><a href="">Table</a></li>
+					<li><a href="">Treats</a></li>
+				</ul>
+			</li>
+			<li class="nav_menu-class">
+				<a href="">Join Email</a>
+			</li>
+		</ul>
+	</nav>
+
+	<nav id="sidebar">
+		<ul class="line-height link-color">
+			<li><a href="./products/props.html" alt="">Props</a></li>
+			<li><a href="" alt="">Costumes</a></li>
+			<li><a href="" alt="">Special FX</a></li>
+			<li><a href="" alt="">Masks</a></li>
+		</ul>
+	</nav>
+
+	<main id="main-content">
+		<section>
+				<h1>Welcome to my site. </h1>
+				<h3>Please come in and stay awhile.</h3>
+			<p class="line-height">I started this website because Halloween has always been my favorite holiday. But during the last year, I started selling some of my favorite Halloween products, and they've become quite a hit.</p>
+			<p class="line-height">
+				If you click on the Personal link, you can browse my favorite Halloween pictures, stories, and films. And if you join my email list, I will keep you up-to-date on all things Halloween.
+			</p>
+		</section>
+
+		<section class="main-content ">
+			<h3>Product of the week</h3>
+			<a href="../images/cat1.jpg" class="link-color">
+				<img src="../images/cat1.jpg" alt="">
+				<p id="cat-caption" >20" Deranged cat</p>
+			</a>
+		</section>
+		<section class="main-content">
+			<h3>My guarantee</h3>
+			<p class="line-height">If you aren't completely satisfied with everything you buy from my site, you can return it for a full refund.<b>No questions asked!</b></p>
+		</section>
+
+	</main>
+
+	<footer class="gradient">
+		&copy; 2016 Ben Murach
+	</footer>
+	
+
+</body>
+</html>

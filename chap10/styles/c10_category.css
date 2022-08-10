@@ -29,6 +29,10 @@ html {
 
 body {
   width: 95%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px 50px 1fr 100px;
+  
   max-width: 960px;
   background: white;
   border: 0.160em solid black;
@@ -36,18 +40,21 @@ body {
   font-family: Sans-Serif;
   font-size: 100%;
   box-shadow: 0.160em 0.05em black;
-  /*adjust after*/
+
 }
 
 header {
+  grid-row: 1 / 2;
+  grid-column: 1 / span 12;;
   padding: .75em;
   border-bottom: 2px solid black;
   background-image: linear-gradient(45deg, white, orange, black);
-  /* margin-bottom: 30px; */
+ 
 }
 
 #logo {
-  min-width: 40px; /*image cannot be less than 40px*/
+  min-width: 40px;
+ 
   float: left;
   padding-right: 2em;
 }
@@ -69,13 +76,19 @@ h1::first-letter {
 h2 {
   font-size: 2.5em;
   line-height: 1.5;
-}
+} */
 
 /* chapter 7 */
 /* Menu horizontal */
-#nav_menu ul {
-  display: flex;
-  justify-content: space-evenly;
+
+#nav_menu {
+  display: grid;
+}
+
+ #nav_menu ul {
+  grid-row: 2 / 3;
+  grid-column: 1 / span 12;
+  /* justify-content: space-evenly; */
   list-style: none;
   position: relative;
   width: 100%;
@@ -95,7 +108,7 @@ h2 {
 }
 
 #nav_menu ul li {
-  float: left;
+  /* float: left; */
   padding: .7em 0;
   color: #fff;
 }
@@ -125,12 +138,13 @@ h2 {
   clear: both;
 }
 
-/* SIDEBAR RULES */
 
+/* SIDEBAR RULES */
+ 
 #sidebar {
   margin-top: 2.5em;
-  float: left;
-  width: 20%;
+  grid-row: 3 / 4;
+  grid-column: 1 / span 4;
 }
 
 #sidebar ul {
@@ -139,12 +153,13 @@ h2 {
   margin-bottom: 1.5em;
 }
 
-#home {
-  color: orange !important;
+.nav_menu-class li:active,
+.nav_menu-class a:ho {
+  color: orange;
 }
 
 #sidebar ul li {
-  width: 81.25%;
+  /* width: 81.25%; */
   margin-bottom: .5em;
   border: 2px solid black;
   padding: .5em 0 .5em 0.5em;
@@ -159,8 +174,9 @@ h2 {
 
 
 #main-content {
-  float: right;
-  width: 76.25%;
+  grid-row: 3 / 4;
+  grid-column: 5 / span 8;
+  
   padding-right: 2.5em;
   text-align: justify;
   margin-top: 1.5em;
@@ -184,7 +200,6 @@ li a:hover {
 }
 
 #cat-caption {
-  /* font-weight: bold; */
   font-size: 1.5em;
 }
 
@@ -198,7 +213,8 @@ p:last-of-type {
 
 
 footer {
-  clear: both;
+  grid-row: 4 / 5;
+  grid-column: 1 / span 12;
   bottom: 0px;
   font-size: 1.1em;
   text-align: center;
@@ -216,11 +232,12 @@ footer {
 /* Specifications for a media query for a tablet in portrait orientation */
 
 @media only screen and (max-width: 800px) {
-  
+
   html {
     background-image: none;
   }
-  
+
+
   body {
     background-image: url("");
     font-size: 90%;
@@ -231,49 +248,54 @@ footer {
 /* Specifications for a media query for a mobile phone in landscape orientation */
 @media only screen and (max-width: 767px) {
   body {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    /* flex-direction: column; */
   }
-  
+
   header {
     order: 1;
   }
-  
+
   nav {
     order: 2;
   }
+
   #nav_menu {
     display: none;
   }
   
+  
+
   #main-content {
     width: 100%;
     order: 3;
     padding: 0 2em;
     margin: 0;
   }
-  
+
   #sidebar {
     order: 4;
-    width: 40vw;
+    /* width: 40vw; */
     float: none;
-    /* display: flex; */
     justify-content: center;
     text-align: center;
     margin: 0 auto;
   }
-  
+
   #sidebar ul {
-    width: 100%;
+    /* width: 100%; */
   }
-  
+
   footer {
     order: 5;
     margin-top: 1em;
   }
-  
+
+
   #mobile_menu {
-    display: block;
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 1 / span 12;
   }
 
   .slicknav_menu {
@@ -284,27 +306,27 @@ footer {
 /* media query that will be applied to screens with a maximum width of 479 pixels. */
 
 @media only screen and (max-width: 479px) {
-  body{
+  body {
     font-size: 89%;
   }
-  
-     h1 {
-      font-size: 1.5em;
-      padding: 0;
-      margin-bottom: 0;
-    }
-    
-    #logo {
-      width: 80px;
-      margin-top: .7em; 
-    }
-    
-    h2 {
-      font-size: 2em;
-    }
-  
-     h3 {
-      font-size: 1.25em;
-      margin-bottom: .4em;
-    }
+
+  h1 {
+    font-size: 1.5em;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  #logo {
+    width: 80px;
+    margin-top: .7em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+    margin-bottom: .4em;
+  }
 }

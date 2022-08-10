@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport"
+      content="width=device-width, initial-scale=1">
+	<title>Hallowen Store</title>
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+	<link rel="stylesheet" href="../chap6/styles/normalize.css">
+	<link rel="stylesheet" href="../styles/c10_category.css">
+		<link rel="stylesheet" href="../../chap10/styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+
+
+</head>
+
+<body>
+	<header class="gradient">
+		<img src="../images/pumpkin.gif" alt="pumpkin" id="logo">
+		<h2>The Hallowen Store</h2>
+		<h3>For the little Goblin in all of us!</h3>
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li class="nav_menu-class">
+				<a href="../index.html" id="home">Home</a>
+			</li>
+			<li class="nav_menu-class">
+				<a href="">Product List</a>
+				<ul>
+					<li><a href="">Candies</a></li>
+					<li><a href="">T-shirt</a></li>
+					<li><a href="">Robe</a></li>
+					<li><a href="">Pumpkin</a></li>
+				</ul>
+			</li>
+			<li class="nav_menu-class">
+				<a href="">Personal</a>
+			</li>
+			<li class="nav_menu-class">
+				<a href="">Decorating Ideas</a>
+				<ul>
+					<li><a href="">Outdoor</a></li>
+					<li><a href="">Indoor</a></li>
+					<li><a href="">Table</a></li>
+					<li><a href="">Treats</a></li>
+				</ul>
+			</li>
+			<li class="nav_menu-class">
+				<a href="">Join Email</a>
+			</li>
+		</ul>
+	</nav>
+
+	<nav id="sidebar">
+		<ul class="line-height link-color">
+			<li><a href="" alt="">Props</a></li>
+			<li><a href="" alt="">Costumes</a></li>
+			<li><a href="" alt="">Special FX</a></li>
+			<li><a href="" alt="">Masks</a></li>
+		</ul>
+	</nav>
+
+	<main id="main-content">
+    <h2>Props</h2>
+			
+			<ul>
+				<li>
+					<h3><a href="../products/#">Flying bats</a></h3>
+					<p class="paragraph">Bats flying in front of a full moon make for an eerie spectacle</p>
+					<p>
+						<span class="price">Price:</span> 69.99
+					</p>
+				</li>
+				<li>
+					<h3><a href="../products/fogmachine.html">20" Deranged cat</a></h3>
+					<p class="paragraph">This cat provides its own light and is perfect for a backyard haunting.</p>
+					<p>
+						<span class="price">Price: </span> 19.99
+					</p>
+				</li>
+				<li>
+					<h3><a href="../products/fogjuice.html">16" Rat</a></h3>
+					<p class="paragraph">This guy is sure to shorten the stay of any unwanted house guests.</p>
+					<p>
+						<span class="price">Price: </span> 14.99
+					</p>
+				</li>
+				<li>
+					<h3><a href="../products/#">20" Rat</a></h3>
+					<p class="paragraph">Yuch! This one will keep you awake at night.</p>
+					<p>
+						<span class="price">Price: </span> 19.99
+					</p>
+				</li>
+				<li>
+					<h3><a href="../products/#">Black mini strobe light</a></h3>
+					<p class="paragraph">Perfect for creating that spot flash effect. Includes mounting bracket.</p>
+					<p>
+						<span class="price">Price: </span> 14.99
+					</p>
+				</li>
+				<li>
+					<h3><a href="../products/#">Life-size skeleton</a></h3>
+					<p class="paragraph">This blown plastic skeleton will be the life of the party. Use him as is or dress him up for an even better effect</p>
+					<p>
+						<span class="price">Price: </span> 14.95
+					</p>
+				</li>
+		
+	</main>
+
+	<footer class="gradient">
+		&copy; 2016 Ben Murach
+	</footer>
+	
+
+</body>
+</html>

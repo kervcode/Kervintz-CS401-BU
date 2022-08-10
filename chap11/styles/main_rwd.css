@@ -139,8 +139,9 @@ h2 {
   margin-bottom: 1.5em;
 }
 
-#home {
-  color: orange !important;
+.nav_menu-class li:active, 
+.nav_menu-class a:ho{
+  color: orange;
 }
 
 #sidebar ul li {
@@ -221,6 +222,7 @@ footer {
     background-image: none;
   }
   
+  
   body {
     background-image: url("");
     font-size: 90%;
@@ -244,6 +246,7 @@ footer {
   }
   #nav_menu {
     display: none;
+    
   }
   
   #main-content {
@@ -271,6 +274,7 @@ footer {
     order: 5;
     margin-top: 1em;
   }
+  
   
   #mobile_menu {
     display: block;
@@ -307,4 +311,6 @@ footer {
       font-size: 1.25em;
       margin-bottom: .4em;
     }
+  
+  
 }
