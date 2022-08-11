@@ -5,7 +5,7 @@ let fahrenheit = prompt("Enter Fahrenheit temperature");
 
 // step 2
 while (fahrenheit != 999); {
-    if(fahrenheit < -100 || fahrenheit > 212){
+    if(fahrenheit < -100 || fahrenheit >= 212){
       alert("You entered " + fahrenheit + ". \n Entry must range from -100 to +212");
       fahrenheit = prompt("Enter Fahrenheit temperature");
     } else {

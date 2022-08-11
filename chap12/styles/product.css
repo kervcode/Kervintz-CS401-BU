@@ -230,7 +230,14 @@ aside img {
   width: 50px;
   margin-left: 20px;
   padding: 10px 0;
+  
 }
+
+aside img:hover {
+  transition: all 3s linear;
+  transform: scaleX(125px);
+}
+
 
 aside a {
   color: #000;
